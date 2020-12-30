@@ -2,8 +2,9 @@ name: jksb
 
 on:
   push:
+  workflow_dispatch:
   schedule:
-    - cron: '15 16,22 * * *'
+    - cron: '15 16 * * *'
 
 jobs:
   sign_in:
